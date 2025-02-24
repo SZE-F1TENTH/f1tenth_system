@@ -55,7 +55,7 @@ private:
         //         std::cout << "You have declined the recording mode" << std::endl;
         //     }
         // }
-        if (msg->buttons[3] == 1) // Assuming button 3 is the kill switch
+        if (msg->buttons[3] == 1) // Assuming button 3 is the kill switch---which is the square button on the controller 
         {
             subscribe_to_teleop();
             RCLCPP_WARN(this->get_logger(), "Kill switch activated, shutting down...");
