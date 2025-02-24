@@ -59,7 +59,8 @@ private:
         {
             subscribe_to_teleop();
             RCLCPP_WARN(this->get_logger(), "Kill switch activated, shutting down...");
-            std::system("killall -9 ros2");
+            //std::system("killall -9 ros2");
+            std:system("pkill -f '/opt/ros/foxy'"
         }
     }
     void subscribe_to_drive()
